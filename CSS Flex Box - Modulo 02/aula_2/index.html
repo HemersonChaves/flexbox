@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout base</title>
+    <style type="text/css">
+        *a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            color: #f6f6f6;
+            display: flex;
+            flex-direction: column;
+        }
+        .wrapper > *{
+            padding: 2.5rem;
+        }
+        header, footer{
+            background-color: lightskyblue;
+        }
+        .nav{
+            background-color: royalblue;
+            order: 1;
+        }
+        article{
+            background-color: tomato;
+        }
+        .banner{
+            background-color:seagreen;
+            order: 1;
+        }
+        footer{
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            cabeçalho
+        </header>
+        <aside class="nav">
+            Categorias, post recentes, ente outros
+        </aside>
+        <article class="content">
+            Where can I get some?
+            There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, 
+            by injected humour, or randomised words which don't look even 
+            slightly believable. If you are going to use a passage of Lorem Ipsum,
+            you need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem Ipsum generators on the Internet
+            tend to repeat predefined chunks as necessary, making this 
+            the first true generator on the Internet. It uses a dictionary
+            of over 200 Latin words, combined with a handful of model sentence
+            structures, to generate Lorem Ipsum which looks reasonable.
+            The generated Lorem Ipsum is therefore always free from repetition
+            , injected humour, or non-characteristic words etc. 
+        </article>
+        <aside class="banner">
+            Área para publicidade
+        </aside>
+        <footer>
+            roda pé
+        </footer>
+    </div>
+</body>
+
+</html>
