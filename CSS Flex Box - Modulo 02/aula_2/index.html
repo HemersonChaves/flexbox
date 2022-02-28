@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout base</title>
     <style type="text/css">
-        *a {
+        * {
             margin: 0;
             padding: 0;
             border: 0;
@@ -43,7 +43,17 @@
             .wrapper{
                 flex-direction: row;
                 flex-wrap: wrap;
+                
             } 
+            header, footer{
+                flex: 1 0 100%;
+            }
+            .nav, .banner{
+                order: 0;
+                flex: 1 0 20%
+            }
+            article{
+                flex: 1 0 60%;            } 
         }
     </style>
 </head>
