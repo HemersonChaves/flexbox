@@ -7,15 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
     <style type="text/css">
-        *{
+        * {
             margin: 0;
             padding: auto;
             border: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             font-family: 'Roboto', sans-serif;
-            font-weight: 300;color: #ddd;
+            font-weight: 300;
+            color: #fff;
+        }
+
+        header {
+            background: mediumpurple;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+        #menu{
+            display:none;
+        }
+        @media screen and (min-width: 480px) {
+            nav {
+                display: flex;
+                flex-direction: row;
+            }
+            .menu{
+                display:none
+            }
         }
     </style>
     <script src="https://kit.fontawesome.com/575c4bf861.js" crossorigin="anonymous"></script>
