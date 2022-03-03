@@ -28,16 +28,53 @@
             display: flex;
             flex-direction: column;
         }
-        #menu{
-            display:none;
+
+        #menu {
+            display: none;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            flex: 1 1 100%;
+        }
+        
+        nav ul li a{
+            background:indigo;
+            padding: 1rem 0;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+        }
+        nav ul li a:hover{
+            background-color: black;
         }
         @media screen and (min-width: 480px) {
             nav {
                 display: flex;
                 flex-direction: row;
+                padding: 1rem;
             }
-            .menu{
-                display:none
+
+            .menu {
+                display: none
+            }
+
+            nav ul {
+                flex-direction: row;
+                width: 30%;
+                justify-content: space-between;
+            }
+
+            nav ul li {
+                flex: 0 1 31%;
             }
         }
     </style>
